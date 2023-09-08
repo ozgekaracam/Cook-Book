@@ -1,0 +1,182 @@
+:root {
+  --background-color: #d1e88e;
+  --font-color: black;
+  --text-align: center;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--font-color);
+  text-align: var(--text-align);
+  vertical-align: baseline;
+  font-variant: normal;
+  font-family: "Times New Roman", Times, serif;
+  list-style-position: outside;
+  page-break-before: always;
+  page-break-after: always;
+  width: 100vw;
+  height: 100vw;
+}
+
+
+h1 {
+  background-color: #3d8b4f;
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  background-clip: text;
+  margin-top: 20px; /* Add top margin to create space between image and h1 */
+}
+
+h2 {
+  color: black;
+  font-size: 24px;
+  font-style: normal;
+   margin-top: 10px;
+}
+
+p {
+  color: black;
+  font-size: 24px;
+  orphans: 3;
+  widows: 3;
+  margin-top: 10px;
+}
+
+caption {
+  font: 200% bold italic;
+  text-transform: capitalize;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 10px
+}
+
+a {
+  max-width: 100%;
+}
+
+a:link {
+  color: var(--font-color);
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: yellow;
+}
+
+a:visited {
+  color: red;
+}
+
+input:focus {
+  background-color: yellow;
+}
+
+td {
+  max-width:100%;
+}
+
+.header {
+  position: relative;
+  border-color: #e6e163;
+  border-style: solid;
+  border-spacing: 1px;
+  border-width: small;
+  text-align: center; /* Center-align content horizontally */
+}
+
+.header img {
+  max-width: 40%; /* Make sure the image doesn't exceed its container */
+  width: 40%; /* Adjust the width as needed to make the image smaller */
+}
+
+
+.photo {
+  float: right;
+}
+
+.list {
+  text-indent: -15%;
+}
+
+#phones {
+  width: 100%;
+  text-align: left;
+  caption-side: top;
+  margin: 1px 1px 50px 1px;
+}
+
+.image {
+  text-align: var(--text-align);
+  float: none;
+  max-width:100%;
+}
+
+#info {
+  text-align:justify;
+  text-indent: 20px;
+  background-color: #e6e163;
+  margin-top: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 4px;
+  border: #e6e163 2px solid;
+  max-width: 100%;
+}
+
+#form {
+  width: 100%;
+  text-align: left;
+  caption-side: top;
+  margin: 1px 1px 50px 1px;
+}
+
+.headlist {
+  text-decoration: underline;
+}
+
+ul:before {
+  content: '';
+  display: inline-block;
+  height: 2em;
+  width: 2em;
+  background-image: url("https://i.redd.it/3erdiduv86i61.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  list-style-type: circle;
+  list-style-image: url("https://i.redd.it/3erdiduv86i61.gif");
+  text-align: left;
+}
+
+ol:before {
+  content: '';
+  display: inline-block;
+  height: 2em;
+  width: 2em;
+  background: url("https://i.redd.it/3erdiduv86i61.gif") no-repeat;
+  background-size: contain;
+  vertical-align: top;
+  list-style: url("https://i.redd.it/3erdiduv86i61.gif") circle;
+  text-align: left;
+}
+
+@media print {
+  body{
+    widows: 3;
+    orphans: 3;
+    width: 210mm;
+    height: 297mm;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  }
+
+@media only screen and (min-width: 600px) {
+}
